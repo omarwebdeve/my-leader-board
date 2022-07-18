@@ -2,10 +2,19 @@
 https://www.figma.com/file/zWwcEHUI3ii9CnANCdfBlp/Hero-Section?node-id=1%3A2
 https://github.com/mir-hussain/flexbox-batch-06 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: var(--main-bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --width:870px;
+    --main-bg-color:#f3f1ff;
 }
 nav{
     background-color: #562EFF;
@@ -14,7 +23,7 @@ nav{
     display: grid;
     grid-template-columns:repeat(2, 1fr) 70px;
     height: 94px;
-    width: 1100px;
+    width: var(--width);
     margin: 0 auto;
     align-items: center;
 }
@@ -30,19 +39,91 @@ nav{
     font-size: 26px;
     color: #fff;;
 }
-.nab-items ul{
+.nav-items ul{
     display: flex;
     gap: 10px;
     justify-content: end;
 }
-.nab-items ul a{
+.nav-items ul a{
     color: #fff;
     text-decoration: none;
 }
-.nab-items ul li{
+.nav-items ul li{
     list-style:none;
 }
 .profile img{
     margin-left: 15px;
     width: 51px;
+}
+main{
+    width: var(--width);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.player-section{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+.top-player h3,.top-blog h3{
+    color: #562EFF;
+    font-size: 30px;
+    font-style: 24px;
+}
+.players{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    margin-top: 30px;
+    gap:25px ;
+    justify-content: space-between;
+}
+.player-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.player-profile img{
+    width: 51px;
+}
+hr{
+    border: solid 1px #D1D1D1;
+    margin: 30px 0;
+}
+/* ------------- top blog style ----------- */
+.top-blog > h3{
+    margin-bottom: 30px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 25px;
+}
+.blog{
+    display: flex;
+    gap: 15px;
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog .blog-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.blog .blog-desc h3{
+    color: #000;
+    font-size: 20px;
+}
+.blog .blog-desc p{
+    font-size: 16px;
+    color: #9f9f9f;
+}
+.blog .blog-desc p > a{
+    color: #562eff;
+    cursor: pointer;
 }
