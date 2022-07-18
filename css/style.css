@@ -184,3 +184,47 @@ hr{
 .timer time{
     font-size: 15px;
 }
+@media screen and (max-width:757px) {
+    .nav-wrap{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+      .players {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .player-profile{
+        flex-direction: column;
+    }
+    .top-player > h3, .top-blog > h3, .lates-course > h3{
+        text-align: center;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog{
+        flex-direction: column;
+        padding:0 20px;
+    }
+    .blog img{
+        width: 100%;
+        height: auto;
+    }
+    .lates-course-blog{
+        flex-direction: column;
+        padding:0 5%;
+    }
+    .courses{width: 100%;}
+    .courses img{height: auto;}
+}
+@media screen and (max-width:387px) {
+      .players {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
+@media screen and (max-width:352px){
+    .nav-items{
+        display: none;
+    }
+} 
