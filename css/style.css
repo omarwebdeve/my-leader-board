@@ -60,13 +60,13 @@ main{
     margin: 0 auto;
     margin-top: 30px;
 }
-.player-section{
+.player-section,.lates-course{
     padding: 30px;
     background-color: #fff;
     border-radius: 5px;
 
 }
-.top-player h3,.top-blog h3{
+.top-player > h3,.top-blog > h3,.lates-course > h3{
     color: #562EFF;
     font-size: 30px;
     font-style: 24px;
@@ -126,4 +126,61 @@ hr{
 .blog .blog-desc p > a{
     color: #562eff;
     cursor: pointer;
+}
+
+/* ------------  Lates Course's style hear ------ */
+.lates-course{
+    margin-top: 20px;
+}
+.lates-course > h3{
+    margin-bottom: 30px;
+}
+.lates-course-blog{
+    display: flex;
+    justify-content: space-between;
+}
+.courses{
+    width: 245px;
+    padding: 13px;
+    /* border: solid; */
+    border-radius: 8px;
+    box-shadow: 1px 5px 15px  rgb(247, 240, 240) ;
+}
+.courses img{
+    width: 100%;
+    height: 104px;
+}
+.courses h3{
+    font-size: 20px;
+}
+.courses p{
+    color: #ed6b4f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.ratting-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rating{
+    color: #ffc014;
+    font-size: 12px;
+}
+.rating .no-ra{
+    color: #AEAEAE;
+}
+.ratting-pas{
+    color: #a2a2a2;
+    font-size: 15px;
+}
+.timer{
+    background-color: #FFE4E8;
+    padding: 3px 8px;
+    border-radius: 50px;
+    color:#ED6B4F;
+    display: inline-block;
+}
+.timer time{
+    font-size: 15px;
 }
