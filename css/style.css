@@ -1,0 +1,48 @@
+/* https://prnt.sc/OmmXclNkb9NP
+https://www.figma.com/file/zWwcEHUI3ii9CnANCdfBlp/Hero-Section?node-id=1%3A2
+https://github.com/mir-hussain/flexbox-batch-06 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #562EFF;
+}
+.nav-wrap{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) 70px;
+    height: 94px;
+    width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+.nav-wrap .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-wrap .logo img{
+    width: 40px;
+}
+.nav-wrap .logo h4{
+    font-size: 26px;
+    color: #fff;;
+}
+.nab-items ul{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.nab-items ul a{
+    color: #fff;
+    text-decoration: none;
+}
+.nab-items ul li{
+    list-style:none;
+}
+.profile img{
+    margin-left: 15px;
+    width: 51px;
+}
